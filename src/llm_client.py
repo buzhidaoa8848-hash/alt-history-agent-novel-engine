@@ -9,6 +9,7 @@ Reference: mirofish-cli app/utils/llm_client.py pattern
 """
 
 import json
+import os
 import random
 from typing import Optional
 
@@ -208,11 +209,48 @@ class LLMClient:
         return ""
 
     def _real_generate(self, prompt: str, system_prompt: str = "", temperature: float = 0.7) -> str:
-        """Real LLM call - requires API configuration."""
-        raise NotImplementedError(
-            "Real LLM mode not yet configured. "
-            "Set mode='mock' or configure API key in config."
+        """Real LLM call via HTTP request (works with DeepSeek, no openai package needed)."""
+        import urllib.request
+        import json as json_mod
+
+        api_key = self.config.get("api_key") or os.environ.get("DEEPSEEK_API_KEY")
+        api_base = self.config.get("api_base") or os.environ.get("DEEPSEEK_API_BASE", "https://api.deepseek.com/v1")
+        model = self.config.get("model") or os.environ.get("DEEPSEEK_MODEL", "deepseek-chat")
+
+        if not api_key:
+            raise ValueError(
+                "No API key found. Set DEEPSEEK_API_KEY env var or pass in config."
+            )
+
+        messages = []
+        if system_prompt:
+            messages.append({"role": "system", "content": system_prompt})
+        messages.append({"role": "user", "content": prompt})
+
+        payload = json_mod.dumps({
+            "model": model,
+            "messages": messages,
+            "temperature": temperature,
+            "max_tokens": 4096,
+        }).encode()
+
+        url = f"{api_base.rstrip('/')}/chat/completions"
+        req = urllib.request.Request(
+            url,
+            data=payload,
+            headers={
+                "Authorization": f"Bearer {api_key}",
+                "Content-Type": "application/json",
+            },
+            method="POST"
         )
+
+        try:
+            with urllib.request.urlopen(req, timeout=120) as resp:
+                result = json_mod.loads(resp.read())
+                return result["choices"][0]["message"]["content"] or ""
+        except Exception as e:
+            return f"[LLM Error: {e}]"
 
 
 # Singleton

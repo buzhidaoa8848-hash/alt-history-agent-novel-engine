@@ -71,6 +71,92 @@ class SimulationRound:
 
         return context
 
+    def _llm_run(self, context: str, agents: List[Dict], world_state: WorldState) -> Dict[str, Any]:
+        """Run simulation round using real LLM."""
+        llm = get_client()
+
+        prompt = f"""你是一个历史推演引擎。请基于以下场景信息，模拟本轮历史推演。
+
+{context}
+
+请按以下JSON格式输出（只输出JSON，不要其他文字）：
+
+{{
+  "events": ["事件1", "事件2", "事件3", "事件4", "事件5"],
+  "agent_observations": [
+    {{"agent": "角色名", "observes": "观察到什么", "information_gap": "信息缺口"}}
+  ],
+  "agent_actions": [
+    {{"agent": "角色名", "action": "采取什么行动", "success_probability": 60}}
+  ],
+  "conflicts": ["冲突1", "冲突2"],
+  "world_state_updates": {{
+    "变量名": 新数值
+  }},
+  "narrative_material": "一段可用于小说写作的叙事素材",
+  "risk_flags": ["风险1", "风险2"]
+}}
+
+注意：
+- 李世民是完整穿越，没有扶苏人格残留
+- 李世民知道秦朝将亡（陈胜吴广、刘邦项羽），但不知道细节
+- 李世民有唐代经验但秦朝无法直接使用
+- 赵高、李斯、胡亥都是理性人，不会降智
+- 蒙恬有忠君与保扶苏之间的内心冲突
+- 每次推演要推动故事向前发展
+- 世界状态变量的数值范围0-100"""
+
+        system = "你是专业历史推演AI，擅长多Agent博弈模拟。输出严格JSON格式。"
+
+        response = llm.generate(prompt, system, temperature=0.8)
+        result = self._parse_llm_response(response)
+
+        if not result:
+            # Fallback to mock if LLM fails
+            print(f"  ⚠️ 第{self.round_id}轮LLM输出解析失败，使用mock回退")
+            result = self._mock_run(agents, world_state)
+
+        # Update world state
+        updates = result.get("world_state_updates", {})
+        if updates:
+            world_state.update(updates)
+            result["world_state_update"] = updates
+
+        return result
+
+    def _parse_llm_response(self, response: str) -> Dict:
+        """Parse LLM JSON response with fallback."""
+        import re, json
+
+        # Try to find JSON in response
+        try:
+            # Find JSON block
+            match = re.search(r'\{[\s\S]*\}', response)
+            if match:
+                data = json.loads(match.group())
+                # Validate required fields
+                if "events" in data or "agent_observations" in data:
+                    return data
+        except (json.JSONDecodeError, ValueError, KeyError):
+            pass
+
+        # If response is small, it might be an error message
+        if len(response) < 50:
+            print(f"  ⚠️ LLM返回太短: {response[:100]}")
+            return {}
+
+        # Second attempt: try to find JSON in the full text
+        try:
+            start = response.find('{')
+            end = response.rfind('}') + 1
+            if start >= 0 and end > start:
+                data = json.loads(response[start:end])
+                return data
+        except (json.JSONDecodeError, ValueError):
+            pass
+
+        return {}
+
     def _mock_run(self, agents: List[Dict], world_state: WorldState) -> Dict[str, Any]:
         """Run simulation with mock logic (for MVP without LLM)."""
         # Deterministic mock based on round number
