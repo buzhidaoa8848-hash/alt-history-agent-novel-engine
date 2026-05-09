@@ -1,0 +1,113 @@
+[
+  {
+    "agent_id": "protagonist",
+    "name": "李世民/扶苏",
+    "identity": "主角",
+    "historical_position": "待补充",
+    "core_goals": [
+      "活下去",
+      "改变命运"
+    ],
+    "resources": [
+      "军队",
+      "智慧"
+    ],
+    "fears": [
+      "失败",
+      "历史重演"
+    ],
+    "personality": "果断",
+    "information_available": [
+      "知道历史走向"
+    ],
+    "constraints": [
+      "不能暴露穿越"
+    ],
+    "likely_actions": [
+      "整合力量",
+      "改革"
+    ],
+    "relationship_to_protagonist": "自身",
+    "current_status": "待机",
+    "morale": 70,
+    "loyalty_to_protagonist": 50,
+    "knowledge_gaps": [],
+    "available_actions": [
+      "整合力量",
+      "改革"
+    ]
+  },
+  {
+    "agent_id": "ally",
+    "name": "蒙恬",
+    "identity": "秦大将",
+    "historical_position": "待补充",
+    "core_goals": [
+      "保扶苏",
+      "忠君"
+    ],
+    "resources": [
+      "三十万边军"
+    ],
+    "fears": [
+      "家族被灭"
+    ],
+    "personality": "忠勇",
+    "information_available": [
+      "怀疑诏书有假"
+    ],
+    "constraints": [
+      "不能公开反叛"
+    ],
+    "likely_actions": [
+      "支持扶苏",
+      "观望"
+    ],
+    "relationship_to_protagonist": "盟友",
+    "current_status": "待机",
+    "morale": 70,
+    "loyalty_to_protagonist": 75,
+    "knowledge_gaps": [],
+    "available_actions": [
+      "支持扶苏",
+      "观望"
+    ]
+  },
+  {
+    "agent_id": "enemy",
+    "name": "赵高",
+    "identity": "中车府令",
+    "historical_position": "待补充",
+    "core_goals": [
+      "扶胡亥",
+      "杀扶苏"
+    ],
+    "resources": [
+      "玺印",
+      "宫廷"
+    ],
+    "fears": [
+      "扶苏不死"
+    ],
+    "personality": "阴险",
+    "information_available": [
+      "知道诏书是假的"
+    ],
+    "constraints": [
+      "必须依靠李斯"
+    ],
+    "likely_actions": [
+      "加速夺权",
+      "派兵镇压"
+    ],
+    "relationship_to_protagonist": "死敌",
+    "current_status": "待机",
+    "morale": 70,
+    "loyalty_to_protagonist": 5,
+    "knowledge_gaps": [],
+    "available_actions": [
+      "加速夺权",
+      "派兵镇压"
+    ]
+  }
+]

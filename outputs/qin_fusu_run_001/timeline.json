@@ -1,0 +1,560 @@
+{
+  "scenario": "李世民穿越为扶苏——沙丘之变",
+  "divergence_point": "扶苏接到赐死诏时李世民意识觉醒（李世民知道秦朝将亡）",
+  "historical_start": "秦始皇三十七年七月（公元前210年）",
+  "terminal_reason": "推演达上限（12轮），未出现死亡结局",
+  "total_rounds": 12,
+  "era_conflicts": [
+    {
+      "round": 1,
+      "conflict": "李世民本能地想用唐制解决危机——但秦朝没有科举、没有均田、没有三省六部，他只能硬着头皮用秦法"
+    },
+    {
+      "round": 2,
+      "conflict": "李世民意识到自己最擅长的'用人术'在秦朝行不通——秦朝官员不是经科举选拔的读书人，而是文法吏"
+    },
+    {
+      "round": 3,
+      "conflict": "李世民想减轻赋税争取民心——但边军粮草全靠咸阳调拨，减税等于断军粮"
+    },
+    {
+      "round": 4,
+      "conflict": "唐制以均田制为基础，秦朝的土地制度完全不同——李世民发现自己实际上不知道如何在秦朝搞经济"
+    },
+    {
+      "round": 5,
+      "conflict": "李世民开始理解秦制的逻辑——严刑峻法虽然残酷，但在统一初期确实有效维持了帝国稳定"
+    },
+    {
+      "round": 6,
+      "conflict": "李世民的最大恐惧成真：他知道秦法不改革帝国必亡，但改革本身就会动摇他的权力基础"
+    },
+    {
+      "round": 7,
+      "conflict": "李世民意识到自己和扶苏的不同——扶苏是真相信仁政，李世民是实用主义地选择仁政"
+    },
+    {
+      "round": 8,
+      "conflict": "时代错位达到顶峰：李世民想用的府兵制、科举制、谏官制度，在秦朝全部不存在"
+    }
+  ],
+  "rounds": [
+    {
+      "round": 1,
+      "title": "分歧点触发",
+      "events": [
+        "扶苏接到赐死诏书，痛哭欲自杀",
+        "蒙恬紧急劝阻，指出诏书疑点",
+        "李世民意识在扶苏体内觉醒",
+        "两名灵魂在同一个身体中产生剧烈冲突",
+        "使者在外营催促回复"
+      ],
+      "world_state_changes": {
+        "protagonist_survival_risk": 60,
+        "protagonist_identity_integration": 30,
+        "meng_tian_loyalty": 85,
+        "meng_tian_willingness_to_rebel": 15,
+        "truth_about_decree": 10,
+        "time_pressure": 85,
+        "narrative_tension": 90
+      },
+      "risk_flags": [
+        "扶苏随时可能被扶苏人格反噬",
+        "使者可能等不及而回报咸阳"
+      ],
+      "era_conflicts": [
+        {
+          "round": 1,
+          "conflict": "李世民本能地想用唐制解决危机——但秦朝没有科举、没有均田、没有三省六部，他只能硬着头皮用秦法"
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "title": "连锁反应",
+      "events": [
+        "扶苏以'父皇之恩当深思'为由暂缓自杀",
+        "蒙恬与扶苏密谈至深夜",
+        "蒙恬开始怀疑诏书真实性",
+        "王离注意到军营中的异常",
+        "扶苏开始用新的眼光审视周围每一个人"
+      ],
+      "world_state_changes": {
+        "protagonist_survival_risk": 50,
+        "protagonist_identity_integration": 40,
+        "meng_tian_willingness_to_rebel": 25,
+        "border_army_stability": 70,
+        "truth_about_decree": 20,
+        "wang_li_reliability": 45
+      },
+      "risk_flags": [
+        "王离可能已经向咸阳密报",
+        "蒙恬的忠诚经不起反复拉扯"
+      ],
+      "era_conflicts": [
+        {
+          "round": 1,
+          "conflict": "李世民本能地想用唐制解决危机——但秦朝没有科举、没有均田、没有三省六部，他只能硬着头皮用秦法"
+        },
+        {
+          "round": 2,
+          "conflict": "李世民意识到自己最擅长的'用人术'在秦朝行不通——秦朝官员不是经科举选拔的读书人，而是文法吏"
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "title": "局势明朗",
+      "events": [
+        "蒙恬下令封锁上郡军营",
+        "扶苏秘密召见几名可靠将领",
+        "王离试图派出信使被蒙恬截获",
+        "军中开始流传'诏书有假'的传言",
+        "扶苏决定派人去咸阳打探消息"
+      ],
+      "world_state_changes": {
+        "protagonist_survival_risk": 45,
+        "zhao_gao_information_control": 65,
+        "border_army_stability": 65,
+        "truth_about_decree": 30,
+        "wang_li_reliability": 35,
+        "meng_tian_willingness_to_rebel": 35,
+        "narrative_tension": 85
+      },
+      "risk_flags": [
+        "消息封锁不可能持久",
+        "王离的立场越来越危险"
+      ],
+      "era_conflicts": [
+        {
+          "round": 1,
+          "conflict": "李世民本能地想用唐制解决危机——但秦朝没有科举、没有均田、没有三省六部，他只能硬着头皮用秦法"
+        },
+        {
+          "round": 2,
+          "conflict": "李世民意识到自己最擅长的'用人术'在秦朝行不通——秦朝官员不是经科举选拔的读书人，而是文法吏"
+        },
+        {
+          "round": 3,
+          "conflict": "李世民想减轻赋税争取民心——但边军粮草全靠咸阳调拨，减税等于断军粮"
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "title": "第一次危机",
+      "events": [
+        "扶苏与蒙恬讨论三种选择：北上、南下、谈判",
+        "蒙恬主张先确认始皇是否在世",
+        "扶苏（李世民经验）主张双管齐下——同时派人向南和向西",
+        "王离被发现与咸阳有密信往来",
+        "边军开始出现站队分化"
+      ],
+      "world_state_changes": {
+        "fusu_military_power": 55,
+        "meng_tian_willingness_to_rebel": 40,
+        "border_army_stability": 60,
+        "time_pressure": 90,
+        "public_unrest": 45,
+        "six_states_restoration_risk": 55
+      },
+      "risk_flags": [
+        "任何战略选择都有致命风险",
+        "时间窗口正在快速关闭"
+      ],
+      "era_conflicts": [
+        {
+          "round": 1,
+          "conflict": "李世民本能地想用唐制解决危机——但秦朝没有科举、没有均田、没有三省六部，他只能硬着头皮用秦法"
+        },
+        {
+          "round": 2,
+          "conflict": "李世民意识到自己最擅长的'用人术'在秦朝行不通——秦朝官员不是经科举选拔的读书人，而是文法吏"
+        },
+        {
+          "round": 3,
+          "conflict": "李世民想减轻赋税争取民心——但边军粮草全靠咸阳调拨，减税等于断军粮"
+        },
+        {
+          "round": 4,
+          "conflict": "唐制以均田制为基础，秦朝的土地制度完全不同——李世民发现自己实际上不知道如何在秦朝搞经济"
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "title": "反制与博弈",
+      "events": [
+        "赵高在行营收到扶苏未死的密报",
+        "赵高紧急召见李斯商议对策",
+        "胡亥得知消息后惊慌失措",
+        "李斯内心开始产生动摇",
+        "赵高决定提前公布始皇死讯，加速胡亥登基"
+      ],
+      "world_state_changes": {
+        "zhao_gao_information_control": 75,
+        "li_si_commitment_to_conspiracy": 75,
+        "xianyang_control": 70,
+        "succession_legitimacy": 25,
+        "time_pressure": 95,
+        "public_unrest": 50,
+        "six_states_restoration_risk": 55,
+        "meng_yi_safety": 30,
+        "narrative_tension": 95
+      },
+      "risk_flags": [
+        "赵高可能提前公布始皇死讯",
+        "蒙毅的安危越发危急"
+      ],
+      "era_conflicts": [
+        {
+          "round": 1,
+          "conflict": "李世民本能地想用唐制解决危机——但秦朝没有科举、没有均田、没有三省六部，他只能硬着头皮用秦法"
+        },
+        {
+          "round": 2,
+          "conflict": "李世民意识到自己最擅长的'用人术'在秦朝行不通——秦朝官员不是经科举选拔的读书人，而是文法吏"
+        },
+        {
+          "round": 3,
+          "conflict": "李世民想减轻赋税争取民心——但边军粮草全靠咸阳调拨，减税等于断军粮"
+        },
+        {
+          "round": 4,
+          "conflict": "唐制以均田制为基础，秦朝的土地制度完全不同——李世民发现自己实际上不知道如何在秦朝搞经济"
+        },
+        {
+          "round": 5,
+          "conflict": "李世民开始理解秦制的逻辑——严刑峻法虽然残酷，但在统一初期确实有效维持了帝国稳定"
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "title": "决裂边缘",
+      "events": [
+        "暂无事件"
+      ],
+      "world_state_changes": {},
+      "risk_flags": [
+        "潜在风险"
+      ],
+      "era_conflicts": [
+        {
+          "round": 1,
+          "conflict": "李世民本能地想用唐制解决危机——但秦朝没有科举、没有均田、没有三省六部，他只能硬着头皮用秦法"
+        },
+        {
+          "round": 2,
+          "conflict": "李世民意识到自己最擅长的'用人术'在秦朝行不通——秦朝官员不是经科举选拔的读书人，而是文法吏"
+        },
+        {
+          "round": 3,
+          "conflict": "李世民想减轻赋税争取民心——但边军粮草全靠咸阳调拨，减税等于断军粮"
+        },
+        {
+          "round": 4,
+          "conflict": "唐制以均田制为基础，秦朝的土地制度完全不同——李世民发现自己实际上不知道如何在秦朝搞经济"
+        },
+        {
+          "round": 5,
+          "conflict": "李世民开始理解秦制的逻辑——严刑峻法虽然残酷，但在统一初期确实有效维持了帝国稳定"
+        },
+        {
+          "round": 6,
+          "conflict": "李世民的最大恐惧成真：他知道秦法不改革帝国必亡，但改革本身就会动摇他的权力基础"
+        }
+      ]
+    },
+    {
+      "round": 7,
+      "title": "第一滴血",
+      "events": [
+        "暂无事件"
+      ],
+      "world_state_changes": {},
+      "risk_flags": [
+        "潜在风险"
+      ],
+      "era_conflicts": [
+        {
+          "round": 1,
+          "conflict": "李世民本能地想用唐制解决危机——但秦朝没有科举、没有均田、没有三省六部，他只能硬着头皮用秦法"
+        },
+        {
+          "round": 2,
+          "conflict": "李世民意识到自己最擅长的'用人术'在秦朝行不通——秦朝官员不是经科举选拔的读书人，而是文法吏"
+        },
+        {
+          "round": 3,
+          "conflict": "李世民想减轻赋税争取民心——但边军粮草全靠咸阳调拨，减税等于断军粮"
+        },
+        {
+          "round": 4,
+          "conflict": "唐制以均田制为基础，秦朝的土地制度完全不同——李世民发现自己实际上不知道如何在秦朝搞经济"
+        },
+        {
+          "round": 5,
+          "conflict": "李世民开始理解秦制的逻辑——严刑峻法虽然残酷，但在统一初期确实有效维持了帝国稳定"
+        },
+        {
+          "round": 6,
+          "conflict": "李世民的最大恐惧成真：他知道秦法不改革帝国必亡，但改革本身就会动摇他的权力基础"
+        },
+        {
+          "round": 7,
+          "conflict": "李世民意识到自己和扶苏的不同——扶苏是真相信仁政，李世民是实用主义地选择仁政"
+        }
+      ]
+    },
+    {
+      "round": 8,
+      "title": "王离之叛",
+      "events": [
+        "暂无事件"
+      ],
+      "world_state_changes": {},
+      "risk_flags": [
+        "潜在风险"
+      ],
+      "era_conflicts": [
+        {
+          "round": 1,
+          "conflict": "李世民本能地想用唐制解决危机——但秦朝没有科举、没有均田、没有三省六部，他只能硬着头皮用秦法"
+        },
+        {
+          "round": 2,
+          "conflict": "李世民意识到自己最擅长的'用人术'在秦朝行不通——秦朝官员不是经科举选拔的读书人，而是文法吏"
+        },
+        {
+          "round": 3,
+          "conflict": "李世民想减轻赋税争取民心——但边军粮草全靠咸阳调拨，减税等于断军粮"
+        },
+        {
+          "round": 4,
+          "conflict": "唐制以均田制为基础，秦朝的土地制度完全不同——李世民发现自己实际上不知道如何在秦朝搞经济"
+        },
+        {
+          "round": 5,
+          "conflict": "李世民开始理解秦制的逻辑——严刑峻法虽然残酷，但在统一初期确实有效维持了帝国稳定"
+        },
+        {
+          "round": 6,
+          "conflict": "李世民的最大恐惧成真：他知道秦法不改革帝国必亡，但改革本身就会动摇他的权力基础"
+        },
+        {
+          "round": 7,
+          "conflict": "李世民意识到自己和扶苏的不同——扶苏是真相信仁政，李世民是实用主义地选择仁政"
+        },
+        {
+          "round": 8,
+          "conflict": "时代错位达到顶峰：李世民想用的府兵制、科举制、谏官制度，在秦朝全部不存在"
+        }
+      ]
+    },
+    {
+      "round": 9,
+      "title": "匈奴南下",
+      "events": [
+        "暂无事件"
+      ],
+      "world_state_changes": {},
+      "risk_flags": [
+        "潜在风险"
+      ],
+      "era_conflicts": [
+        {
+          "round": 1,
+          "conflict": "李世民本能地想用唐制解决危机——但秦朝没有科举、没有均田、没有三省六部，他只能硬着头皮用秦法"
+        },
+        {
+          "round": 2,
+          "conflict": "李世民意识到自己最擅长的'用人术'在秦朝行不通——秦朝官员不是经科举选拔的读书人，而是文法吏"
+        },
+        {
+          "round": 3,
+          "conflict": "李世民想减轻赋税争取民心——但边军粮草全靠咸阳调拨，减税等于断军粮"
+        },
+        {
+          "round": 4,
+          "conflict": "唐制以均田制为基础，秦朝的土地制度完全不同——李世民发现自己实际上不知道如何在秦朝搞经济"
+        },
+        {
+          "round": 5,
+          "conflict": "李世民开始理解秦制的逻辑——严刑峻法虽然残酷，但在统一初期确实有效维持了帝国稳定"
+        },
+        {
+          "round": 6,
+          "conflict": "李世民的最大恐惧成真：他知道秦法不改革帝国必亡，但改革本身就会动摇他的权力基础"
+        },
+        {
+          "round": 7,
+          "conflict": "李世民意识到自己和扶苏的不同——扶苏是真相信仁政，李世民是实用主义地选择仁政"
+        },
+        {
+          "round": 8,
+          "conflict": "时代错位达到顶峰：李世民想用的府兵制、科举制、谏官制度，在秦朝全部不存在"
+        }
+      ]
+    },
+    {
+      "round": 10,
+      "title": "咸阳变局",
+      "events": [
+        "暂无事件"
+      ],
+      "world_state_changes": {},
+      "risk_flags": [
+        "潜在风险"
+      ],
+      "era_conflicts": [
+        {
+          "round": 1,
+          "conflict": "李世民本能地想用唐制解决危机——但秦朝没有科举、没有均田、没有三省六部，他只能硬着头皮用秦法"
+        },
+        {
+          "round": 2,
+          "conflict": "李世民意识到自己最擅长的'用人术'在秦朝行不通——秦朝官员不是经科举选拔的读书人，而是文法吏"
+        },
+        {
+          "round": 3,
+          "conflict": "李世民想减轻赋税争取民心——但边军粮草全靠咸阳调拨，减税等于断军粮"
+        },
+        {
+          "round": 4,
+          "conflict": "唐制以均田制为基础，秦朝的土地制度完全不同——李世民发现自己实际上不知道如何在秦朝搞经济"
+        },
+        {
+          "round": 5,
+          "conflict": "李世民开始理解秦制的逻辑——严刑峻法虽然残酷，但在统一初期确实有效维持了帝国稳定"
+        },
+        {
+          "round": 6,
+          "conflict": "李世民的最大恐惧成真：他知道秦法不改革帝国必亡，但改革本身就会动摇他的权力基础"
+        },
+        {
+          "round": 7,
+          "conflict": "李世民意识到自己和扶苏的不同——扶苏是真相信仁政，李世民是实用主义地选择仁政"
+        },
+        {
+          "round": 8,
+          "conflict": "时代错位达到顶峰：李世民想用的府兵制、科举制、谏官制度，在秦朝全部不存在"
+        }
+      ]
+    },
+    {
+      "round": 11,
+      "title": "最终对峙",
+      "events": [
+        "暂无事件"
+      ],
+      "world_state_changes": {},
+      "risk_flags": [
+        "潜在风险"
+      ],
+      "era_conflicts": [
+        {
+          "round": 1,
+          "conflict": "李世民本能地想用唐制解决危机——但秦朝没有科举、没有均田、没有三省六部，他只能硬着头皮用秦法"
+        },
+        {
+          "round": 2,
+          "conflict": "李世民意识到自己最擅长的'用人术'在秦朝行不通——秦朝官员不是经科举选拔的读书人，而是文法吏"
+        },
+        {
+          "round": 3,
+          "conflict": "李世民想减轻赋税争取民心——但边军粮草全靠咸阳调拨，减税等于断军粮"
+        },
+        {
+          "round": 4,
+          "conflict": "唐制以均田制为基础，秦朝的土地制度完全不同——李世民发现自己实际上不知道如何在秦朝搞经济"
+        },
+        {
+          "round": 5,
+          "conflict": "李世民开始理解秦制的逻辑——严刑峻法虽然残酷，但在统一初期确实有效维持了帝国稳定"
+        },
+        {
+          "round": 6,
+          "conflict": "李世民的最大恐惧成真：他知道秦法不改革帝国必亡，但改革本身就会动摇他的权力基础"
+        },
+        {
+          "round": 7,
+          "conflict": "李世民意识到自己和扶苏的不同——扶苏是真相信仁政，李世民是实用主义地选择仁政"
+        },
+        {
+          "round": 8,
+          "conflict": "时代错位达到顶峰：李世民想用的府兵制、科举制、谏官制度，在秦朝全部不存在"
+        }
+      ]
+    },
+    {
+      "round": 12,
+      "title": "宿命的终点",
+      "events": [
+        "暂无事件"
+      ],
+      "world_state_changes": {},
+      "risk_flags": [
+        "潜在风险"
+      ],
+      "era_conflicts": [
+        {
+          "round": 1,
+          "conflict": "李世民本能地想用唐制解决危机——但秦朝没有科举、没有均田、没有三省六部，他只能硬着头皮用秦法"
+        },
+        {
+          "round": 2,
+          "conflict": "李世民意识到自己最擅长的'用人术'在秦朝行不通——秦朝官员不是经科举选拔的读书人，而是文法吏"
+        },
+        {
+          "round": 3,
+          "conflict": "李世民想减轻赋税争取民心——但边军粮草全靠咸阳调拨，减税等于断军粮"
+        },
+        {
+          "round": 4,
+          "conflict": "唐制以均田制为基础，秦朝的土地制度完全不同——李世民发现自己实际上不知道如何在秦朝搞经济"
+        },
+        {
+          "round": 5,
+          "conflict": "李世民开始理解秦制的逻辑——严刑峻法虽然残酷，但在统一初期确实有效维持了帝国稳定"
+        },
+        {
+          "round": 6,
+          "conflict": "李世民的最大恐惧成真：他知道秦法不改革帝国必亡，但改革本身就会动摇他的权力基础"
+        },
+        {
+          "round": 7,
+          "conflict": "李世民意识到自己和扶苏的不同——扶苏是真相信仁政，李世民是实用主义地选择仁政"
+        },
+        {
+          "round": 8,
+          "conflict": "时代错位达到顶峰：李世民想用的府兵制、科举制、谏官制度，在秦朝全部不存在"
+        }
+      ]
+    }
+  ],
+  "final_world_state": {
+    "current_year": "秦始皇三十七年（公元前210年）",
+    "current_season": "七月，盛夏",
+    "current_location": "",
+    "emperor_status": "秦始皇已崩，密不发丧",
+    "succession_legitimacy": 25,
+    "fusu_military_power": 55,
+    "zhao_gao_information_control": 75,
+    "li_si_commitment_to_conspiracy": 75,
+    "meng_tian_loyalty": 85,
+    "meng_tian_willingness_to_rebel": 40,
+    "border_army_stability": 60,
+    "xianyang_control": 70,
+    "public_unrest": 50,
+    "six_states_restoration_risk": 55,
+    "protagonist_survival_risk": 45,
+    "wang_li_reliability": 35,
+    "meng_yi_safety": 30,
+    "truth_about_decree": 30,
+    "time_pressure": 95,
+    "protagonist_identity_integration": 40,
+    "narrative_tension": 95,
+    "round_number": 0
+  }
+}

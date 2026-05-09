@@ -1,0 +1,17 @@
+{
+  "scenario_id": "qin_fusu_lishimin_v2",
+  "title": "李世民穿越为扶苏（经典版）",
+  "type": "history",
+  "description": "沙丘之变后，赵高李斯伪造赐死诏。李世民在扶苏身上醒来。",
+  "divergence_point": {
+    "event": "扶苏接到赐死诏时李世民意识觉醒",
+    "alternate_trigger": "李世民（唐太宗）做出不同选择",
+    "protagonist_info": "主角是李世民（唐太宗）"
+  },
+  "setting": {
+    "era": "秦朝",
+    "year": "秦始皇三十七年（公元前210年）",
+    "location": "",
+    "political_situation": "沙丘之变后，赵高李斯伪造赐死诏。李世民在扶苏身上醒来。"
+  }
+}

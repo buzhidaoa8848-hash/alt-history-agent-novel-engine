@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-05-09T14:18:21.675723",
+  "scenario": "qin_fusu",
+  "mode": "mock",
+  "terminal_reason": "推演达上限（12轮），未出现死亡结局",
+  "constraint_violations": 0,
+  "files": [
+    "scenario.json",
+    "agents.json",
+    "world_state.json",
+    "timeline.json",
+    "plot_outline.md",
+    "chapter_001.md",
+    "constraint_report.md",
+    "consistency_report.md"
+  ]
+}
