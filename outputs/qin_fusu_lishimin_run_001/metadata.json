@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-05-09T09:19:58.514865",
+  "scenario": "scenarios/qin_fusu_lishimin_data.py",
+  "mode": "mock",
+  "files": [
+    "scenario.json",
+    "agents.json",
+    "world_state.json",
+    "timeline.json",
+    "plot_outline.md",
+    "chapter_001.md",
+    "consistency_report.md"
+  ]
+}

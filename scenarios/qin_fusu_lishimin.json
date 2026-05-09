@@ -1,0 +1,81 @@
+{
+  "scenario": {
+    "id": "qin_fusu_lishimin",
+    "title": "李世民穿越为扶苏——沙丘之变",
+    "description": ">",
+    "divergence_point": {
+      "event": "扶苏接到赐死诏，即将自杀",
+      "historical_outcome": "扶苏自杀，胡亥继位，秦朝三年后灭亡",
+      "alternate_trigger": "李世民意识在扶苏身上觉醒",
+      "trigger_time": "扶苏已经哭泣、准备自杀、蒙恬正在劝说的瞬间",
+      "protagonist_info": ">"
+    },
+    "setting": {
+      "era": "秦朝",
+      "year": "秦始皇三十七年（公元前210年）",
+      "location": "上郡（今陕西榆林一带），蒙恬边防军大营",
+      "season": "七月，盛夏",
+      "political_situation": ">"
+    },
+    "agents": {
+      "agents": [
+        "id: six_states_observer"
+      ],
+      "name": "六国遗民观察者",
+      "identity": "原六国贵族、遗民、士人的集体声音（作为非人格化Agent）",
+      "historical_position": "帝国最不稳定的因素",
+      "core_goals": {
+        "core_goals": [
+          "伺机而动"
+        ]
+      },
+      "resources": {
+        "resources": [
+          "秦国对六国故地控制薄弱"
+        ]
+      },
+      "fears": {
+        "fears": [
+          "新君比秦始皇更残暴"
+        ]
+      },
+      "personality": "隐忍、伺机、暗流涌动",
+      "information_available": {
+        "information_available": [
+          "知道扶苏是仁义之人"
+        ]
+      },
+      "constraints": {
+        "constraints": [
+          "始皇还在世（以为）时不敢动"
+        ]
+      },
+      "likely_actions": {
+        "likely_actions": [
+          "如果扶苏继位推行仁政，可能观望"
+        ]
+      },
+      "relationship_to_protagonist": "潜在的威胁或潜在的拥护者（取决于主角执政方向）"
+    },
+    "simulation_rounds": {
+      "simulation_rounds": [
+        "round: 5"
+      ],
+      "title": "反制与博弈",
+      "trigger": "赵高、李斯、胡亥收到扶苏未死的消息，开始反制行动",
+      "key_conflicts": {
+        "key_conflicts": [
+          "信息战——真假诏书的舆论争夺"
+        ]
+      }
+    },
+    "output": {
+      "base_dir": "outputs/qin_fusu_lishimin_run_001",
+      "files": {
+        "files": [
+          "consistency_report.md"
+        ]
+      }
+    }
+  }
+}
